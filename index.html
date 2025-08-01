@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Lucky Face Detection</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🎯 Trò chơi Lucky Face - Ai sẽ được chọn?</h1>
+
+  <div id="videoContainer">
+    <video id="camera" autoplay playsinline></video>
+    <canvas id="overlay"></canvas>
+  </div>
+
+  <button id="clickon">Bật/Tắt Camera</button>
+  <button id="randomButton">Chọn khuôn mặt ngẫu nhiên</button>
+
+  <!-- Kết quả khuôn mặt hiển thị -->
+  <div id="faceDisplay" style="margin-top: 30px; display: none;">
+    <h2>🎉 Khuôn mặt may mắn</h2>
+    <img id="luckyFace" alt="Khuôn mặt được chọn" />
+  </div>
+
+  <script src="face-api.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
